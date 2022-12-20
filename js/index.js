@@ -1,11 +1,3 @@
-/*-----BARRA DE MENÚ----- */
-/*LE DECIMOS QUE AL PASAR EL MOUSE SE VISUALIZARA LOS SUB-MENUS */
-window.addEventListener(scroll,function(){
-    var header = document.querySelector("header");
-    header.classList.toggle("abajo", window.scrollY>0);
-})
-
-/*-----FINAL DE BARRA DE MENÚ----- */
 
 /* ------ inicio de boton leer más ------ */
 let cerrar = document.querySelectorAll(".close")[0];
@@ -71,8 +63,6 @@ clickbtn.onclick = descarga;
 /*-------- FINAL DE himno-boton descarga----------*/
 
 
-
-
 /*------ INICIO DE BOTON MODAL--------*/
 const open = document.getElementById('open');
 const modal_container = document.getElementById('modal_container');
@@ -87,28 +77,3 @@ close.addEventListener('click', () => {
 });
 
 /*--------FINAL DE BOTON MODAL----------*/
-
-/*Agregamos Carrusel de Docentes*/
-var swiper = new Swiper(".slide-content", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
-
-/*-----Agregamos relacion de nuestro carrusel-----*/
-
-var slider = document.querySelector(".slier-prin");
-
-slider.innerHTML += slider.innerHTML;
-/*-----FINAL DE carrusel -----*/
