@@ -1,4 +1,4 @@
-const url = "http://localhost:3000/api/cliente/";
+const url = "http://54.164.205.242:3000/api/CLIENTE/";
 let resultados = '';
 const formArticulo = document.querySelector("form");
 const usercli = document.getElementById("USERCLI");
@@ -41,10 +41,10 @@ formArticulo.addEventListener('submit',
                 }
             )
             .then(
-                response => response.json()
+            response => response.json()
             )
             .then(
-                response => location.reload()
+            response => location.reload()
             );
         }
     } else if(opcion == 'editar'){

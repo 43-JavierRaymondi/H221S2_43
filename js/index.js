@@ -63,6 +63,8 @@ clickbtn.onclick = descarga;
 /*-------- FINAL DE himno-boton descarga----------*/
 
 
+
+
 /*------ INICIO DE BOTON MODAL--------*/
 const open = document.getElementById('open');
 const modal_container = document.getElementById('modal_container');
@@ -77,3 +79,27 @@ close.addEventListener('click', () => {
 });
 
 /*--------FINAL DE BOTON MODAL----------*/
+
+/*Agregamos Carrusel de Docentes*/
+var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+
+
+
+var slider = document.querySelector(".slier-prin");
+
+slider.innerHTML += slider.innerHTML;

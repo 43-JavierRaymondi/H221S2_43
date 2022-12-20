@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 /*Barra de menú*/
 header{
     width: 100%;
@@ -328,15 +329,6 @@ header{
 
 }
 
-
-/*decimos que el contenido reseña no se muestre*/
-
-
-/*le decimos que al hacer click se mostrara el contenido pero para 
-se trabajará con javaScrip*/
-
-
-
 /*es el boton leer Más*/
 .ventana{
     display: inline-block;
@@ -368,20 +360,20 @@ se trabajará con javaScrip*/
     justify-content: center;
     align-items: center;
     z-index: +2;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /*este es la ventana emergente de reseña*/
 .modal{
-    width: 70%;
-    height: 68%;
-    background: linear-gradient(rgba(83, 80, 80, 0.977),rgb(136, 131, 131));
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(rgba(83, 80, 80, 0.977),rgba(56, 53, 53, 0.926));
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     position: relative;
-    transition: transform 0.1;
+    transition: transform 0.2;
     transform: translateY(0%);
     border-radius: 18px;
     /*overflow: hidden;*/
@@ -426,7 +418,7 @@ se trabajará con javaScrip*/
     color: var(--colo1);
     font-size: 22px;
     text-align: center;
-    transition: 0.5s ease-in-out;
+    transition: 0.1s ease-in-out;
     border: 1px solid var(--colo1);
     border-radius: 10px;
     padding: 12px;
@@ -785,7 +777,7 @@ button {
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
 
  .docente__titulo{
-    margin-top: 10px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     font-size: 30px;
@@ -793,8 +785,8 @@ button {
     text-decoration: none;
 }
 .docente{
-    margin-top: 50px;
-    height:510px;
+    margin-top: center;
+    height:200px;
   }
   
   @media all and (max-width: 767px){
@@ -803,21 +795,25 @@ button {
     }
   }
 .slide-container{
-    max-width: 1120px;
+    display: flex;
+    max-width: 100%;
     width: 100%;
-    background-color: gray;
+    background-color: rgba(118, 116, 116, 0.562);
     padding: 50px 0;
+    margin-top: 40px;
+    align-items: center; 
+    justify-content: center; 
 }
 .slide-content{
     margin: 0 40px;
 }
-.card{
+.card-10{
     border-radius: 25px;
     background-color: #efefef;
 }
 .image-content,
 .card-content{
-     display: flex;   
+    display: flex;   
     flex-direction: column;
     align-items: center;
     padding: 10px 14px;
@@ -882,7 +878,7 @@ button {
     height: 720px;
 	margin: 50px auto 0;
 	overflow: hidden;
-    background: linear-gradient(rgba(84, 84, 86, 0.199),rgba(84, 84, 86, 0.259));
+    background: linear-gradient(rgba(84, 84, 86, 0.199),rgba(98, 98, 100, 0.259));
     z-index: +3;
    
 }
@@ -894,14 +890,14 @@ button {
     /*decimos que nuestras imagenes ocupen un 800%
     esto quiere decir que 1 imagen = 100%
     8 img = 800%*/
-	width: 800%;
-    animation: cambio 36s infinite alternate ease-in-out;
+	width: 1000%;
+    animation: cambio 46s infinite alternate ease-in-out;
 	
 }
 
 /*el contenido en este caso son las imagenes */
 .slider li {
-	width: 100%;
+	width: 120%;
 	list-style: none;
     z-index: -4;
 }
@@ -916,28 +912,31 @@ button {
 /*si agregamos más imagenes lo devidimos en mas %*/
 @keyframes cambio {
 	0% {margin-left: 0;}
-	20% {margin-left: 0;}
+	15% {margin-left: 0;}
+
+    20% {margin-left: -100%;}
+	25% {margin-left: -100%;}
 	
-	35% {margin-left: -100%;}
-	40% {margin-left: -100%;}
+	35% {margin-left: -200%;}
+	40% {margin-left: -200%;}
 	
-	45% {margin-left: -200%;}
-	50% {margin-left: -200%;}
+	45% {margin-left: -300%;}
+	50% {margin-left: -300%;}
 	
-	55% {margin-left: -300%;}
-	60% {margin-left: -300%;}
+	55% {margin-left: -400%;}
+	60% {margin-left: -400%;}
 
-    65% {margin-left: -400%;}
-	70% {margin-left: -400%;}
+    65% {margin-left: -500%;}
+	70% {margin-left: -500%;}
 
-    75% {margin-left: -500%;}
-	80% {margin-left: -500%;}
+    75% {margin-left: -600%;}
+	80% {margin-left: -600%;}
 
-    85% {margin-left: -600%;}
-	90% {margin-left: -600%;}
+    85% {margin-left: -700%;}
+	90% {margin-left: -700%;}
 
-    95% {margin-left: -700%;}
-	100% {margin-left: -700%;}
+    95% {margin-left: -800%;}
+	100% {margin-left: -800%;}
 
 
 
@@ -1371,7 +1370,7 @@ button {
   }
   
   .department li a{
-    background: #8c7777 !important;
+    background: #d50101 !important;
     top: 48px;  
     position: absolute;
     z-index: 1;
@@ -1553,7 +1552,7 @@ button {
     height: 400px;
     background: #000;
     z-index: +5;
-    margin-top: 385rem;
+    margin-top: 595rem;
     margin-left: 400px;
     
 
@@ -1650,7 +1649,7 @@ button {
     height: 400px;
     background: #000;
     z-index: 4;
-    margin-top: 385rem;
+    margin-top: 595rem;
     
 
 }
@@ -1736,62 +1735,7 @@ button {
 }
  
 
-/* ubicación */
 
-.acerca_ubicacion{
-    width: 100%;
-    padding: 30px;
-    margin-top: none;
-    max-width: 1200px;
-    margin: auto;
-}
-
-
-.acerca_ubicacion .left{
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-
-.acerca_ubicacion .posicion_ubi{
-    width: 100%;
-    padding: 0px 30px;
-}
-
-
-.acerca_ubicacion .posicion h1{
-    margin: 50px;
-    font-size: 40x;
-    color: #000000;
-}
-.ubicacion{
-    margin-top: 30px;
-}
-
-.posicion_ubi{
-    margin-top: 50px;
-}
-/* Modifica el centrado y tamaño del titulo ubicación */
-.Center2{
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-
-/* Modifica el tamaño y color del texto */
-.posicion_ubi{
-    display:flex;
-    padding: 10px;
-    color: rgb(0, 0, 0);
-
-}
-
-.contactanos{
-    padding-left: 40px ;
-}
 
 
 
@@ -1945,4 +1889,57 @@ footer{
     border: none;
     height: 1px;
     background-color: #7a7a7a;
+}
+
+/*DOCUMENTOS DE GESTION*/
+
+.linea{
+	background:rgb(255, 0, 0);
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+
+.docgestion{
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.content.docs h2{
+	text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+}
+
+.content.docs{
+	text-align: center;
+    font-size: 28px;
+}
+.content.docs h1{
+    color: #ffc107;
+    letter-spacing: 0;
+    text-shadow: -3px -3px 3px  #337ab7, 3px -3px 3px  #337ab7, -3px 3px 3px  #337ab7, 3px 3px 3px #0000DF;
+
+}
+
+iframe{
+    width: 100%;
+    height: 90vh;
+}
+
+/*ubicacion*/
+.contactanos{
+    padding-left: 50px;
+}
+.section{
+    display: flex;
+    padding-left: 80px;
+    position: center;
+    
+
 }
